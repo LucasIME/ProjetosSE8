@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadore de Frente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://getbootstrap.com/examples/cover/cover.css">
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br>
+        <form class="form-inline" action="/VIJava/FreteServlet"  METHOD="POST">
+            <div class="form-group">
+                <label for="exampleInputName2">CEP Origem</label>
+                <input type="text" class="form-control" name="CEPOrigem" placeholder="XXXXXXXX" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail2">CEP Destino</label>
+                <input type="text" class="form-control" name="CEPDestino" placeholder="YYYYYYYY" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail2">Peso</label>
+                <input type="text" class="form-control" name="Peso" placeholder="ZZ Kg" required>
+            </div>
+            <button type="submit" class="btn btn-default">Calcular Frete!</button>
+        </form>
+    </body>
+</html>
